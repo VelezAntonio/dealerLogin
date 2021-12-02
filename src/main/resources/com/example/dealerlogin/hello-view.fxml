@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dealerlogin.HelloController">
+    <left>
+        <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="158.0" prefHeight="17.0" prefWidth="223.0" text="Car inventory">
+                    <font>
+                        <Font name="Rockwell" size="30.0" />
+                    </font>
+                    <effect>
+                        <DropShadow blurType="ONE_PASS_BOX">
+                            <color>
+                                <Color opacity="0.0" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="322.0" style="-fx-background-color: 0;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="51.0" prefHeight="17.0" prefWidth="223.0" text="Secure Login">
+                    <font>
+                        <Font name="Rockwell" size="17.0" />
+                    </font>
+                    <effect>
+                        <DropShadow blurType="ONE_PASS_BOX">
+                            <color>
+                                <Color opacity="0.0" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Label>
+                <Label contentDisplay="CENTER" layoutX="28.0" layoutY="112.0" prefHeight="8.0" prefWidth="67.0" text="Username">
+                    <font>
+                        <Font name="Rockwell" size="13.0" />
+                    </font>
+                    <effect>
+                        <DropShadow blurType="ONE_PASS_BOX">
+                            <color>
+                                <Color opacity="0.0" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Label>
+                <Label contentDisplay="CENTER" layoutX="28.0" layoutY="158.0" prefHeight="8.0" prefWidth="67.0" text="Password">
+                    <font>
+                        <Font name="Rockwell" size="13.0" />
+                    </font>
+                    <effect>
+                        <DropShadow blurType="ONE_PASS_BOX">
+                            <color>
+                                <Color opacity="0.0" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Label>
+                <TextField fx:id="usernameTF" layoutX="103.0" layoutY="109.0" promptText="Username" />
+                <PasswordField fx:id="passwordPF" layoutX="103.0" layoutY="155.0" promptText="Password" />
+                <Button fx:id="loginBtn" layoutX="30.0" layoutY="239.0" mnemonicParsing="false" onAction="#loginBtnOnAction" prefHeight="25.0" prefWidth="233.0" text="Login" />
+                <Button fx:id="cancelBtn" layoutX="30.0" layoutY="285.0" mnemonicParsing="false" onAction="#cancelBtnOnAction" prefHeight="25.0" prefWidth="233.0" text="Cancel" />
+                <Label fx:id="loginMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="85.0" prefHeight="18.0" prefWidth="236.0" textFill="#da0000">
+                    <font>
+                        <Font name="Rockwell" size="11.0" />
+                    </font>
+                    <effect>
+                        <DropShadow blurType="ONE_PASS_BOX">
+                            <color>
+                                <Color opacity="0.0" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
